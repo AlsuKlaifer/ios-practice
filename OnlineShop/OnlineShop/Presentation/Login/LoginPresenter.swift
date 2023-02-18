@@ -2,29 +2,27 @@
 //  LoginPresenter.swift
 //  OnlineShop
 //
-//  Created by Alsu Faizova on 11.02.2023.
+//  Created by Teacher on 11.02.2023.
 //
 
-import Foundation
+import UIKit
 
 class LoginPresenter {
     var authorizationService: AuthorizationService = MockAuthorizationService.shared
-    
+
     weak var view: LoginViewController?
-    
+
     @MainActor
-    func logIn(login: String, password: String){
+    func logIn(login: String, password: String) {
         view?.showLoader()
-        Task{
-            do{
+        Task {
+            do {
                 try await authorizationService.signIn(login: login, password: password)
-                await MainActor.run {
-                    view?.hideLoader()
-                }
+                view?.hideLoader()
             } catch {
                 view?.show(error: error)
+                view?.hideLoader()
             }
         }
     }
-    
 }
