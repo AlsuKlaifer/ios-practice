@@ -25,6 +25,12 @@ class CatalogViewController: UIViewController {
         setConstraints()
     }
     
+    func show(error: Error) {
+        let alertController = UIAlertController(title: "OOOPS", message: "Something went wrong: \(error)", preferredStyle: .alert)
+        alertController.addAction(.init(title: "OK", style: .cancel))
+        present(alertController, animated: true)
+    }
+    
     func setup() {
         
         title = "Juice"

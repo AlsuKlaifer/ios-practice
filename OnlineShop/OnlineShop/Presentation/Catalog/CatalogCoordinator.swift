@@ -9,7 +9,7 @@ import UIKit
 
 class CatalogCoordinator{
     var navigationController: UINavigationController?
-        
+    
     func showCatalog() -> UIViewController {
         let controller = CatalogViewController()
         let presenter = CatalogPresenter()

@@ -14,13 +14,13 @@ struct JuiceInfo{
 }
 
 protocol JuiceInfoService{
-    func obtainJuiceInfo() -> [JuiceInfo]
+    func obtainJuiceInfo() throws -> [JuiceInfo]
 }
 
 class JuiceInfoServiceImplementation : JuiceInfoService {
-    static let shared: JuiceInfoServiceImplementation = .init()
+    static let shared = JuiceInfoServiceImplementation()
     
-    func obtainJuiceInfo() -> [JuiceInfo] {
+    func obtainJuiceInfo() throws -> [JuiceInfo] {
         return [
             JuiceInfo(name: "Apple juice", calories: 20, price: 90),
             JuiceInfo(name: "Orange juice", calories: 30, price: 100),

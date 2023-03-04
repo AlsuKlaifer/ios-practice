@@ -101,6 +101,44 @@
             </objects>
             <point key="canvasLocation" x="880" y="-27"/>
         </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="zbm-kz-0z8">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmationViewController" id="fwW-QQ-QWs" customClass="ConfirmationViewController" customModule="OnlineShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XEp-dH-BCM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-lc-pVX">
+                                <rect key="frame" x="138" y="405.66666666666669" width="117.33333333333331" height="41"/>
+                                <accessibility key="accessibilityConfiguration" label="Confirm"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-ih-GEb">
+                                <rect key="frame" x="154" y="454.66666666666669" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirm" destination="fwW-QQ-QWs" eventType="touchUpInside" id="Y96-4D-7T6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2e6-je-9mY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ub6-lc-pVX" firstAttribute="centerY" secondItem="XEp-dH-BCM" secondAttribute="centerY" id="2Mj-4z-4Dh"/>
+                            <constraint firstItem="ub6-lc-pVX" firstAttribute="centerX" secondItem="XEp-dH-BCM" secondAttribute="centerX" id="BHx-Jh-eLm"/>
+                            <constraint firstItem="FfI-ih-GEb" firstAttribute="centerX" secondItem="XEp-dH-BCM" secondAttribute="centerX" id="MTW-Bi-pRb"/>
+                            <constraint firstItem="FfI-ih-GEb" firstAttribute="top" secondItem="ub6-lc-pVX" secondAttribute="bottom" constant="8" id="Zfw-gM-9bW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31r-S4-LAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

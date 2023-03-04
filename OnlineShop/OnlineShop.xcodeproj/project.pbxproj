@@ -11,6 +11,18 @@
 		15B3DEF0299FDCF700B5999B /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3DEEF299FDCF700B5999B /* CatalogService.swift */; };
 		15B3DEF2299FF24700B5999B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3DEF1299FF24700B5999B /* DetailsViewController.swift */; };
 		15B3DEF4299FFDA200B5999B /* CatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3DEF3299FFDA200B5999B /* CatalogCoordinator.swift */; };
+		15BED7D529B12CE700884C60 /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7D429B12CE700884C60 /* OnlineShopTests.swift */; };
+		15BED7DC29B1C87600884C60 /* MockAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7DB29B1C87600884C60 /* MockAuthorizationService.swift */; };
+		15BED7DE29B1C8D200884C60 /* RestAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7DD29B1C8D200884C60 /* RestAuthorizationService.swift */; };
+		15BED7E029B1CFD900884C60 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7DF29B1CFD900884C60 /* SignInCoordinator.swift */; };
+		15BED7E229B1D22900884C60 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7E129B1D22900884C60 /* ConfirmationViewController.swift */; };
+		15BED7E529B1D75100884C60 /* ConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7E429B1D75100884C60 /* ConfirmationPresenter.swift */; };
+		15BED7E829B1FAD900884C60 /* MockConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7E729B1FAD900884C60 /* MockConfigurator.swift */; };
+		15BED7EA29B1FB3F00884C60 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7E929B1FB3F00884C60 /* ServiceLocator.swift */; };
+		15BED7EC29B2021B00884C60 /* RestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7EB29B2021B00884C60 /* RestConfigurator.swift */; };
+		15BED7EF29B257AA00884C60 /* MockLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7EE29B257AA00884C60 /* MockLoginView.swift */; };
+		15BED7F729B276DF00884C60 /* OnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7F629B276DF00884C60 /* OnlineShopUITests.swift */; };
+		15BED7F929B276DF00884C60 /* OnlineShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BED7F829B276DF00884C60 /* OnlineShopUITestsLaunchTests.swift */; };
 		AE62A6D02997C44A00276B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62A6CF2997C44A00276B3A /* AppDelegate.swift */; };
 		AE62A6D22997C44A00276B3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62A6D12997C44A00276B3A /* SceneDelegate.swift */; };
 		AE62A6D72997C44A00276B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE62A6D52997C44A00276B3A /* Main.storyboard */; };
@@ -25,11 +37,42 @@
 		AE62A6F52997D4F000276B3A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62A6F42997D4F000276B3A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		15BED7D629B12CE700884C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE62A6C42997C44A00276B3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE62A6CB2997C44A00276B3A;
+			remoteInfo = OnlineShop;
+		};
+		15BED7FA29B276DF00884C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE62A6C42997C44A00276B3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE62A6CB2997C44A00276B3A;
+			remoteInfo = OnlineShop;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		155592CF29A016D9003C00C4 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
 		15B3DEEF299FDCF700B5999B /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
 		15B3DEF1299FF24700B5999B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		15B3DEF3299FFDA200B5999B /* CatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCoordinator.swift; sourceTree = "<group>"; };
+		15BED7D229B12CE700884C60 /* OnlineShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BED7D429B12CE700884C60 /* OnlineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopTests.swift; sourceTree = "<group>"; };
+		15BED7DB29B1C87600884C60 /* MockAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorizationService.swift; sourceTree = "<group>"; };
+		15BED7DD29B1C8D200884C60 /* RestAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAuthorizationService.swift; sourceTree = "<group>"; };
+		15BED7DF29B1CFD900884C60 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		15BED7E129B1D22900884C60 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		15BED7E429B1D75100884C60 /* ConfirmationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPresenter.swift; sourceTree = "<group>"; };
+		15BED7E729B1FAD900884C60 /* MockConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConfigurator.swift; sourceTree = "<group>"; };
+		15BED7E929B1FB3F00884C60 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		15BED7EB29B2021B00884C60 /* RestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestConfigurator.swift; sourceTree = "<group>"; };
+		15BED7EE29B257AA00884C60 /* MockLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginView.swift; sourceTree = "<group>"; };
+		15BED7F429B276DF00884C60 /* OnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BED7F629B276DF00884C60 /* OnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITests.swift; sourceTree = "<group>"; };
+		15BED7F829B276DF00884C60 /* OnlineShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AE62A6CC2997C44A00276B3A /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE62A6CF2997C44A00276B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE62A6D12997C44A00276B3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +90,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		15BED7CF29B12CE700884C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BED7F129B276DF00884C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE62A6C92997C44A00276B3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +114,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15BED7D329B12CE700884C60 /* OnlineShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				15BED7ED29B2579500884C60 /* Mocks */,
+				15BED7D429B12CE700884C60 /* OnlineShopTests.swift */,
+			);
+			path = OnlineShopTests;
+			sourceTree = "<group>";
+		};
+		15BED7E329B1D72F00884C60 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				15BED7E129B1D22900884C60 /* ConfirmationViewController.swift */,
+				15BED7E429B1D75100884C60 /* ConfirmationPresenter.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		15BED7E629B1FAB700884C60 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				15BED7E929B1FB3F00884C60 /* ServiceLocator.swift */,
+				15BED7E729B1FAD900884C60 /* MockConfigurator.swift */,
+				15BED7EB29B2021B00884C60 /* RestConfigurator.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		15BED7ED29B2579500884C60 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				15BED7EE29B257AA00884C60 /* MockLoginView.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		15BED7F529B276DF00884C60 /* OnlineShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15BED7F629B276DF00884C60 /* OnlineShopUITests.swift */,
+				15BED7F829B276DF00884C60 /* OnlineShopUITestsLaunchTests.swift */,
+			);
+			path = OnlineShopUITests;
+			sourceTree = "<group>";
+		};
 		AE62A6C32997C44A00276B3A = {
 			isa = PBXGroup;
 			children = (
 				AE62A6CE2997C44A00276B3A /* OnlineShop */,
+				15BED7D329B12CE700884C60 /* OnlineShopTests */,
+				15BED7F529B276DF00884C60 /* OnlineShopUITests */,
 				AE62A6CD2997C44A00276B3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				AE62A6CC2997C44A00276B3A /* OnlineShop.app */,
+				15BED7D229B12CE700884C60 /* OnlineShopTests.xctest */,
+				15BED7F429B276DF00884C60 /* OnlineShopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +182,7 @@
 		AE62A6CE2997C44A00276B3A /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				15BED7E629B1FAB700884C60 /* Dependencies */,
 				AE62A6E62997C5CB00276B3A /* Services */,
 				AE62A6E32997C4FD00276B3A /* Presentation */,
 				AE62A6CF2997C44A00276B3A /* AppDelegate.swift */,
@@ -91,11 +198,13 @@
 		AE62A6E32997C4FD00276B3A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				15BED7E329B1D72F00884C60 /* Confirmation */,
 				AE62A6F12997D47800276B3A /* Profile */,
 				AE62A6F02997D46A00276B3A /* Catalog */,
 				AE62A6E92997CB7200276B3A /* Login */,
 				AE62A6E42997C51800276B3A /* AppCoordinator.swift */,
 				AE62A6EE2997D43200276B3A /* MainTabBarCoordinator.swift */,
+				15BED7DF29B1CFD900884C60 /* SignInCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -105,6 +214,8 @@
 			children = (
 				AE62A6E72997C60E00276B3A /* AuthorizationService.swift */,
 				15B3DEEF299FDCF700B5999B /* CatalogService.swift */,
+				15BED7DB29B1C87600884C60 /* MockAuthorizationService.swift */,
+				15BED7DD29B1C8D200884C60 /* RestAuthorizationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -140,6 +251,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		15BED7D129B12CE700884C60 /* OnlineShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BED7DA29B12CE700884C60 /* Build configuration list for PBXNativeTarget "OnlineShopTests" */;
+			buildPhases = (
+				15BED7CE29B12CE700884C60 /* Sources */,
+				15BED7CF29B12CE700884C60 /* Frameworks */,
+				15BED7D029B12CE700884C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BED7D729B12CE700884C60 /* PBXTargetDependency */,
+			);
+			name = OnlineShopTests;
+			productName = OnlineShopTests;
+			productReference = 15BED7D229B12CE700884C60 /* OnlineShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15BED7F329B276DF00884C60 /* OnlineShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BED7FE29B276DF00884C60 /* Build configuration list for PBXNativeTarget "OnlineShopUITests" */;
+			buildPhases = (
+				15BED7F029B276DF00884C60 /* Sources */,
+				15BED7F129B276DF00884C60 /* Frameworks */,
+				15BED7F229B276DF00884C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BED7FB29B276DF00884C60 /* PBXTargetDependency */,
+			);
+			name = OnlineShopUITests;
+			productName = OnlineShopUITests;
+			productReference = 15BED7F429B276DF00884C60 /* OnlineShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AE62A6CB2997C44A00276B3A /* OnlineShop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE62A6E02997C44B00276B3A /* Build configuration list for PBXNativeTarget "OnlineShop" */;
@@ -164,9 +311,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					15BED7D129B12CE700884C60 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AE62A6CB2997C44A00276B3A;
+					};
+					15BED7F329B276DF00884C60 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AE62A6CB2997C44A00276B3A;
+					};
 					AE62A6CB2997C44A00276B3A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -186,11 +341,27 @@
 			projectRoot = "";
 			targets = (
 				AE62A6CB2997C44A00276B3A /* OnlineShop */,
+				15BED7D129B12CE700884C60 /* OnlineShopTests */,
+				15BED7F329B276DF00884C60 /* OnlineShopUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		15BED7D029B12CE700884C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BED7F229B276DF00884C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE62A6CA2997C44A00276B3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,27 +375,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		15BED7CE29B12CE700884C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BED7EF29B257AA00884C60 /* MockLoginView.swift in Sources */,
+				15BED7D529B12CE700884C60 /* OnlineShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BED7F029B276DF00884C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BED7F729B276DF00884C60 /* OnlineShopUITests.swift in Sources */,
+				15BED7F929B276DF00884C60 /* OnlineShopUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE62A6C82997C44A00276B3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE62A6F32997D48800276B3A /* CatalogViewController.swift in Sources */,
+				15BED7EC29B2021B00884C60 /* RestConfigurator.swift in Sources */,
 				AE62A6ED2997CB8C00276B3A /* LoginPresenter.swift in Sources */,
+				15BED7E229B1D22900884C60 /* ConfirmationViewController.swift in Sources */,
+				15BED7E529B1D75100884C60 /* ConfirmationPresenter.swift in Sources */,
 				AE62A6E52997C51800276B3A /* AppCoordinator.swift in Sources */,
+				15BED7DE29B1C8D200884C60 /* RestAuthorizationService.swift in Sources */,
+				15BED7E829B1FAD900884C60 /* MockConfigurator.swift in Sources */,
 				15B3DEF2299FF24700B5999B /* DetailsViewController.swift in Sources */,
 				AE62A6EF2997D43200276B3A /* MainTabBarCoordinator.swift in Sources */,
 				AE62A6D02997C44A00276B3A /* AppDelegate.swift in Sources */,
 				AE62A6D22997C44A00276B3A /* SceneDelegate.swift in Sources */,
+				15BED7DC29B1C87600884C60 /* MockAuthorizationService.swift in Sources */,
 				155592D029A016D9003C00C4 /* CatalogPresenter.swift in Sources */,
 				AE62A6F52997D4F000276B3A /* ProfileViewController.swift in Sources */,
 				15B3DEF4299FFDA200B5999B /* CatalogCoordinator.swift in Sources */,
 				AE62A6EB2997CB8200276B3A /* LoginViewController.swift in Sources */,
+				15BED7EA29B1FB3F00884C60 /* ServiceLocator.swift in Sources */,
 				AE62A6E82997C60E00276B3A /* AuthorizationService.swift in Sources */,
+				15BED7E029B1CFD900884C60 /* SignInCoordinator.swift in Sources */,
 				15B3DEF0299FDCF700B5999B /* CatalogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15BED7D729B12CE700884C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE62A6CB2997C44A00276B3A /* OnlineShop */;
+			targetProxy = 15BED7D629B12CE700884C60 /* PBXContainerItemProxy */;
+		};
+		15BED7FB29B276DF00884C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE62A6CB2997C44A00276B3A /* OnlineShop */;
+			targetProxy = 15BED7FA29B276DF00884C60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE62A6D52997C44A00276B3A /* Main.storyboard */ = {
@@ -246,6 +456,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		15BED7D829B12CE700884C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75R88STH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = classwork.OnlineShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineShop";
+			};
+			name = Debug;
+		};
+		15BED7D929B12CE700884C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75R88STH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = classwork.OnlineShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineShop";
+			};
+			name = Release;
+		};
+		15BED7FC29B276DF00884C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75R88STH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = classwork.OnlineShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineShop;
+			};
+			name = Debug;
+		};
+		15BED7FD29B276DF00884C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75R88STH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = classwork.OnlineShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineShop;
+			};
+			name = Release;
+		};
 		AE62A6DE2997C44B00276B3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,6 +701,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15BED7DA29B12CE700884C60 /* Build configuration list for PBXNativeTarget "OnlineShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BED7D829B12CE700884C60 /* Debug */,
+				15BED7D929B12CE700884C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BED7FE29B276DF00884C60 /* Build configuration list for PBXNativeTarget "OnlineShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BED7FC29B276DF00884C60 /* Debug */,
+				15BED7FD29B276DF00884C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE62A6C72997C44A00276B3A /* Build configuration list for PBXProject "OnlineShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

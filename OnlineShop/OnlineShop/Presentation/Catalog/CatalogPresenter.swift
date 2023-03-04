@@ -8,16 +8,19 @@
 import UIKit
 
 class CatalogPresenter {
-
     private let juiceInfoService: JuiceInfoService = JuiceInfoServiceImplementation.shared
-    
+
     var showDetails: (JuiceInfo) -> Void = { _ in }
 
     weak var view: CatalogViewController?
     var data: [JuiceInfo]?
 
     func loadData() {
-        data = juiceInfoService.obtainJuiceInfo()
+        do {
+            try data = juiceInfoService.obtainJuiceInfo()
+        } catch {
+            view?.show(error: error)
+        }
     }
 
     func openDetails(at index: Int) {

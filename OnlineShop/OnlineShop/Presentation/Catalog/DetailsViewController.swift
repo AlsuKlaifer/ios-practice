@@ -10,7 +10,7 @@ import UIKit
 class DetailsViewController: UIViewController{
     
     var juiceInfo: JuiceInfo!
-    var juiceInfoService: JuiceInfoService = JuiceInfoServiceImplementation.shared
+//    var juiceInfoService: JuiceInfoService = JuiceInfoServiceImplementation.shared
     
     private var nameLabel: UILabel = {
         let label = UILabel()

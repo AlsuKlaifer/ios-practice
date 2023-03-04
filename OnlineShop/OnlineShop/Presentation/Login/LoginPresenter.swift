@@ -8,21 +8,37 @@
 import UIKit
 
 class LoginPresenter {
-    var authorizationService: AuthorizationService = MockAuthorizationService.shared
+    init(
+        authorizationService: AuthorizationService,
+        view: LoginView,
+        confirmSignIn: @escaping () -> Void
+    ){
+        self.authorizationService = authorizationService
+        self.view = view
+        self.confirmSignIn = confirmSignIn
+    }
+    
+    private var authorizationService: AuthorizationService
+    private weak var view: LoginView?
+    private var confirmSignIn: () -> Void = {}
 
-    weak var view: LoginViewController?
-
+    var _isAuthorized = true
+    
     @MainActor
-    func logIn(login: String, password: String) {
+    func logIn(login: String, password: String) async -> Bool {
         view?.showLoader()
-        Task {
-            do {
-                try await authorizationService.signIn(login: login, password: password)
-                view?.hideLoader()
-            } catch {
-                view?.show(error: error)
-                view?.hideLoader()
-            }
+        do {
+            try await authorizationService.signIn(login: login, password: password)
+            view?.hideLoader()
+        } catch AuthorizationError.confirmationRequired {
+            confirmSignIn()
+            view?.hideLoader()
         }
+        catch {
+            view?.show(error: error)
+            view?.hideLoader()
+            _isAuthorized = false
+        }
+        return _isAuthorized
     }
 }

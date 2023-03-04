@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    var authorizationService: AuthorizationService = MockAuthorizationService.shared
+    var authorizationService: AuthorizationService!
 
     @IBAction private func signOut() {
         authorizationService.signOut()
