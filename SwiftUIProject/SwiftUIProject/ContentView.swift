@@ -24,11 +24,16 @@ struct ContentView: View {
             
             TextField(" Login", text: $login)
                 .textFieldStyle(.roundedBorder)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.never)
 
             SecureField(" Password", text: $password)
                 .textFieldStyle(.roundedBorder)
+                .textFieldStyle(.roundedBorder)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.never)
             
-            var right = login == "Admin" && password == "1234"
+            let right = login == "admin" && password == "1234"
             
             Button {
                 showAlert = true
