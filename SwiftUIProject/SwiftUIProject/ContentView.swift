@@ -17,67 +17,91 @@ struct ContentView: View {
     @State
     var showAlert: Bool = false
     
+    @State
+    var showFullScreenModalMain: Bool = false
+    
     var body: some View {
         VStack(spacing: 15) {
             Spacer()
                 .frame(height: 50)
             
-            TextField(" Login", text: $login)
-                .textFieldStyle(.roundedBorder)
+            TextField("Login", text: $login)
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
-
-            SecureField(" Password", text: $password)
-                .textFieldStyle(.roundedBorder)
-                .textFieldStyle(.roundedBorder)
+                .frame(height: 35)
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 10))
+                .background(.white)
+                .cornerRadius(5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(Color(.systemGray5), lineWidth: 1.0)
+                )
+            
+            SecureField("Password", text: $password)
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
+                .frame(height: 35)
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 10))
+                .background(.white)
+                .cornerRadius(5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(Color(.systemGray5), lineWidth: 1.0)
+                )
             
             let right = login == "admin" && password == "1234"
             
             Button {
-                showAlert = true
+                if right {
+                    showFullScreenModalMain.toggle()
+                } else {
+                    showAlert = true
+                }
             } label: {
                 Text("Sign in")
                     .frame(width: 200, height: 45)
                     .background(
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.linearGradient(colors: [Color(.systemGray2), Color(.systemGray3)], startPoint: .top, endPoint: .bottomTrailing))
+                            .fill(.linearGradient(colors: [Color(.systemGray), Color(.systemGray3)], startPoint: .topLeading, endPoint: .bottomTrailing))
                     )
                     .foregroundColor(.white)
                     .bold()
             }
             .padding(.top, 10)
-            .alert("\(right ? "Congratulations" : "Error")", isPresented: $showAlert) {
-                if right {
-                    Button("OK") {}
-                } else {
-                    Button("Clear login") {
-                        login = ""
-                    }
-                    Button("Clear password") {
-                        password = ""
-                    }
-                    Button("Clear all") {
-                        login = ""
-                        password = ""
-                    }
+            .alert("Error", isPresented: $showAlert) {
+                Button("Clear login") {
+                    login = ""
+                }
+                Button("Clear password") {
+                    password = ""
+                }
+                Button("Clear all") {
+                    login = ""
+                    password = ""
                 }
             } message: {
-                if (right) {
-                    Text("You successfully logged in")
-                } else {
-                    Text("Try again")
+                Text("Try again")
+            }
+            .fullScreenCover(isPresented: $showFullScreenModalMain) {
+                VStack {
+                    TabView {
+                        HomeView()
+                            .tabItem {
+                                Label("Home", systemImage: "house")
+                            }
+                        
+                        ProfileView(name: login, showFullScreenModal: $showFullScreenModalMain)
+                            .tabItem {
+                                Label("Profile", systemImage: "person")
+                            }
+                    }
                 }
             }
-
             
             Spacer()
         }
         .padding(.horizontal, 30)
         .background(Color(.systemGray6))
-        
-        
     }
 }
 
